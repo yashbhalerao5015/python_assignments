@@ -1,0 +1,14 @@
+num = int(input("Enter number to check if its a woodall or not: "))
+
+def isWoodall(num):
+    n=1
+    while True:
+        value = n *(2**n)-1
+        if value == num:
+            return True
+        if value > num:
+            return False
+        
+        n+=1
+        
+print(isWoodall(num))
